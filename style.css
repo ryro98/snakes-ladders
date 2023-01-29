@@ -1,0 +1,35 @@
+table {
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+td {
+    width: 70px;
+    height: 70px;
+    border: solid 1px black;
+    text-align: center;
+}
+
+#kostka {
+    position: absolute;
+    top: 50px;
+    left: 780px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    border: solid 2px black;
+}
+
+#p8, #p18, #p45, #p46, #p52, #p59, #p41, #p49, #p58, #p72, #p85, #p98 {
+    animation-name: redblue;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction: alternate;
+}
+
+@keyframes redblue {
+    0% {background-color: rgb(230,69,41)};
+    100% {background-color: rgb(66,191,235)};
+}
